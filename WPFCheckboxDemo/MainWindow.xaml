@@ -1,0 +1,56 @@
+﻿<Window x:Class="WPFCheckboxDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFCheckboxDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="300">
+    <StackPanel>
+        <Label FontWeight="Bold">Topings</Label>
+        <CheckBox x:Name="cbAllPizza" IsThreeState="true" Checked="cbAllPizza_change" Unchecked="cbAllPizza_change" ></CheckBox>
+        <CheckBox Margin="15,5" x:Name="cbCheese" VerticalContentAlignment="Center" Checked="changeChildrenPizza" Unchecked="changeChildrenPizza">
+            <Label x:Name="lbCheese" Margin="0" Padding="0" >
+                <WrapPanel  Orientation="Horizontal">
+                    <Image Width="20" Source="/extracheese.jpg">
+                    </Image>
+                    <AccessText Margin="5,0,0,0" FontSize="18" Text="Extra Cheese"></AccessText>
+                </WrapPanel>
+            </Label>
+        </CheckBox>
+        <CheckBox  Margin="15,5" x:Name="cbTuna" VerticalContentAlignment="Center" Checked="changeChildrenPizza" Unchecked="changeChildrenPizza">
+            <Label x:Name="lbTuna"  Margin="0" Padding="0" >
+                <WrapPanel  Orientation="Horizontal">
+                    <Image  Width="20" Source="/tuna.jpg">
+                    </Image>
+                    <AccessText Margin="5,0,0,0" FontSize="18" Text="Tuna" >
+                    </AccessText>
+                </WrapPanel>
+            </Label>
+
+        </CheckBox>
+        <CheckBox  Margin="15,5" x:Name="cbHam"  VerticalContentAlignment="Center" Checked="changeChildrenPizza"  Unchecked="changeChildrenPizza">
+            <Label x:Name="lbHam"  Margin="0" Padding="0" >
+                <WrapPanel  Orientation="Horizontal">
+                    <Image  Width="20" Source="/ham.jpg">
+                    </Image>
+                    <AccessText Margin="5,0,0,0" FontSize="18" Text="Ham" >
+                    </AccessText>
+                </WrapPanel>
+            </Label>
+
+        </CheckBox>
+        <CheckBox  Margin="15,5" x:Name="cbPepperoni" VerticalContentAlignment="Center" Checked="changeChildrenPizza" Unchecked="changeChildrenPizza">
+            <Label x:Name="lbPepperoni" Margin="0" Padding="0" >
+                <WrapPanel  Orientation="Horizontal">
+                    <Image  Width="20" Source="/pepperoni.jpg">
+                    </Image>
+                    <AccessText Margin="5,0,0,0" FontSize="18" Text="Pepperoni" >
+                    </AccessText>
+                </WrapPanel>
+            </Label>
+
+        </CheckBox>
+
+    </StackPanel>
+</Window>

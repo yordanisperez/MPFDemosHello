@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemoButton", "WPFDemoBut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemoRadioButton", "WPFDemoRadioButton\WPFDemoRadioButton.csproj", "{5F2A456B-5032-41E7-9F25-A3A67AB456AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFCheckboxDemo", "WPFCheckboxDemo\WPFCheckboxDemo.csproj", "{8B353F46-EFB3-4468-82E4-0727717B05A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{5F2A456B-5032-41E7-9F25-A3A67AB456AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F2A456B-5032-41E7-9F25-A3A67AB456AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F2A456B-5032-41E7-9F25-A3A67AB456AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B353F46-EFB3-4468-82E4-0727717B05A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B353F46-EFB3-4468-82E4-0727717B05A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B353F46-EFB3-4468-82E4-0727717B05A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B353F46-EFB3-4468-82E4-0727717B05A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
