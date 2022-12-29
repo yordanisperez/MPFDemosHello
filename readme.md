@@ -99,4 +99,47 @@ Los atributos `Width` y `Height` se utilizan para establecer el tamaño del compo
 </Button>
 
 ```
+## WPFDemoTextBlock
 
+El primer elemento `TextBlock` tiene el atributo `TextTrimming` establecido en "WordEllipsis", 
+lo que significa que si el texto es demasiado largo para caber en el espacio disponible, 
+se mostrarán puntos suspensivos para indicar que hay más texto disponible.
+
+El segundo elemento `TextBlock` tiene el atributo `TextWrapping` establecido en "Wrap", 
+lo que significa que si el texto es demasiado largo para caber en el espacio disponible, 
+se mostrará en varias líneas.
+
+El tercer elemento `TextBlock` tiene el atributo `TextWrapping` establecido en "WrapWithOverflow", 
+lo que significa que si el texto es demasiado largo para caber en el espacio disponible, 
+se mostrará en varias líneas y se mostrará una barra de desplazamiento para 
+permitir al usuario desplazarse por el texto. 
+Además, el elemento `TextBlock` tiene el atributo `Foreground` establecido en "Blue" para 
+establecer el color del texto y contiene un elemento `Span` con el atributo `Foreground` 
+establecido en "red" para cambiar el color de una parte del texto.
+
+```
+        <TextBlock TextTrimming="WordEllipsis">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Dolor magna eget est lorem. Morbi blandit cursus risus at 
+            ultrices mi. Congue eu consequat ac felis donec et odio pellentesque. 
+            Fames ac turpis egestas maecenas pharetra convallis posuere. 
+            Massa placerat duis ultricies lacus.
+        </TextBlock>
+        <Separator Margin="5"></Separator>
+        <TextBlock TextWrapping="Wrap">
+            Loremipsumdolorsitamet,consecteturadipiscingelit,seddoeiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Dolor magna 
+            eget est lorem. Morbi blandit cursus risus at ultrices mi. 
+            Congue eu consequat ac felis donec et odio pellentesque. 
+            Fames ac turpis egestas maecenas pharetra convallis posuere. 
+            Massa placerat duis ultricies lacus.
+        </TextBlock>
+        <Separator Margin="5"></Separator>
+        <TextBlock TextWrapping="WrapWithOverflow" Foreground="Blue">
+            Loremipsumdolorsitamet,consecteturadipiscingelit,seddoeiusmod tempor 
+            <Span Foreground="red">incididunt ut labore</Span>  
+            et dolore magna aliqua. Dolor magna eget est lorem. Morbi blandit cursus risus at ultrices mi. Congue eu consequat ac felis donec et odio pellentesque. Fames ac turpis egestas maecenas pharetra convallis posuere. Massa placerat duis ultricies lacus.
+        </TextBlock>
+
+```xaml
