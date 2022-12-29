@@ -139,7 +139,39 @@ establecido en "red" para cambiar el color de una parte del texto.
         <TextBlock TextWrapping="WrapWithOverflow" Foreground="Blue">
             Loremipsumdolorsitamet,consecteturadipiscingelit,seddoeiusmod tempor 
             <Span Foreground="red">incididunt ut labore</Span>  
-            et dolore magna aliqua. Dolor magna eget est lorem. Morbi blandit cursus risus at ultrices mi. Congue eu consequat ac felis donec et odio pellentesque. Fames ac turpis egestas maecenas pharetra convallis posuere. Massa placerat duis ultricies lacus.
+            et dolore magna aliqua. Dolor magna eget est lorem. 
+            Morbi blandit cursus risus at ultrices mi. 
+            Congue eu consequat ac felis donec et odio pellentesque. 
+            Fames ac turpis egestas maecenas pharetra convallis posuere. 
+            Massa placerat duis ultricies lacus.
         </TextBlock>
 
-```xaml
+## WPFDemoTextBox
+```
+       <TextBox 
+            FontSize="30" 
+            Margin="15" 
+            AcceptsReturn="True" 
+            TextWrapping="Wrap"
+            SpellCheck.IsEnabled="True"
+            Language="en-US"
+            Background="AliceBlue"
+            Foreground="Black"
+            Text="Hello world"
+            IsReadOnly="True"
+            />
+ ```
+La etiqueta `TextBox` tiene varios atributos que se pueden establecer para personalizar 
+su apariencia y comportamiento. 
+En este caso, se establece el atributo `FontSize` en "30" para establecer el 
+tamaño de la fuente del texto en el componente TextBox. El atributo `Margin` se establece en "15" 
+para establecer el margen alrededor del componente `TextBox`. El atributo `AcceptsReturn` 
+se establece en "True" para permitir que el usuario inserte saltos de línea en el texto 
+del componente `TextBox` utilizando la tecla `Enter`.
+
+El atributo `TextWrapping` se establece en "Wrap" para permitir que el texto se 
+muestre en varias líneas si es demasiado largo para caber en el espacio disponible. 
+El atributo `SpellCheck.IsEnabled` se establece en "True" para habilitar la revisión 
+ortográfica del texto del componente `TextBox`. 
+El atributo `Language` se establece en "en-US" para establecer el idioma del texto 
+del componente `TextBox` en inglés.
