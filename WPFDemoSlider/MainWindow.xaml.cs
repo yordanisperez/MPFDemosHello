@@ -24,5 +24,15 @@ namespace WPFDemoSlider
         {
             InitializeComponent();
         }
+
+        private void slMyslider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            if (tbValueSlider!=null /*&& slMyslider.Value > 0d*/)
+            {
+                tbValueSlider.Text = "Value slider es " + slMyslider.Value.ToString();
+               // tbValueSlider.FontSize = slMyslider.Value;
+            }
+               
+        }
     }
 }

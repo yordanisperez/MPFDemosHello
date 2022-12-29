@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFDemoSlider"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="200" Width="300">
+    <StackPanel VerticalAlignment="Center">
+        <Slider x:Name="slMyslider" 
+                Minimum="10"
+                Maximum="50" 
+                IsSnapToTickEnabled="true"
+                TickPlacement="BottomRight" 
+                TickFrequency="2" 
+                Value="15"
+                ValueChanged="slMyslider_ValueChanged"
+                >
+        </Slider>
+        <TextBlock x:Name="tbValueSlider" FontSize="{Binding ElementName=slMyslider , Path=Value ,UpdateSourceTrigger=PropertyChanged}"></TextBlock>
         
-    </Grid>
+    </StackPanel>
 </Window>
