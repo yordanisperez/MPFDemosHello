@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFExpanderDemo", "WPFExpan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemoGrid", "WPFDemoGrid\WPFDemoGrid.csproj", "{0767DEA1-29D5-49BC-9FB3-D2AFD10E42BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemoWrapPanel", "WPFDemoWrapPanel\WPFDemoWrapPanel.csproj", "{5A087275-A56C-43EC-80A9-8BE09756EA1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{0767DEA1-29D5-49BC-9FB3-D2AFD10E42BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0767DEA1-29D5-49BC-9FB3-D2AFD10E42BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0767DEA1-29D5-49BC-9FB3-D2AFD10E42BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A087275-A56C-43EC-80A9-8BE09756EA1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A087275-A56C-43EC-80A9-8BE09756EA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A087275-A56C-43EC-80A9-8BE09756EA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A087275-A56C-43EC-80A9-8BE09756EA1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
