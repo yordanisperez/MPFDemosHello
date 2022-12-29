@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemoLink", "WPFHelloWorld\WPFDemoLink.csproj", "{724FF553-B672-49DD-AFA0-679E6FB61F1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemoTextBlock", "WpfTextBlockDemo\WPFDemoTextBlock.csproj", "{4F615862-0F03-435B-8F20-C83CF0ED5CE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemoTextBlockFromCShard", "WPFDemoTextBlockFromCShard\WPFDemoTextBlockFromCShard.csproj", "{5E26B080-B5A6-4D91-A90D-29E16F91B1B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemoLabel", "WPFDemoLabel\WPFDemoLabel.csproj", "{77FD8B4E-76E3-4E4A-86CE-545214146E51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemoTextBox", "WPFDemoTextBox\WPFDemoTextBox.csproj", "{073EF248-E09E-487E-A959-5760225B2F56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemoButton", "WPFDemoButton\WPFDemoButton.csproj", "{7A6FC0F6-7A42-4F6E-85E8-C0D1E133D457}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemoRadioButton", "WPFDemoRadioButton\WPFDemoRadioButton.csproj", "{5F2A456B-5032-41E7-9F25-A3A67AB456AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{724FF553-B672-49DD-AFA0-679E6FB61F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724FF553-B672-49DD-AFA0-679E6FB61F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724FF553-B672-49DD-AFA0-679E6FB61F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724FF553-B672-49DD-AFA0-679E6FB61F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F615862-0F03-435B-8F20-C83CF0ED5CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F615862-0F03-435B-8F20-C83CF0ED5CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F615862-0F03-435B-8F20-C83CF0ED5CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F615862-0F03-435B-8F20-C83CF0ED5CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E26B080-B5A6-4D91-A90D-29E16F91B1B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E26B080-B5A6-4D91-A90D-29E16F91B1B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E26B080-B5A6-4D91-A90D-29E16F91B1B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E26B080-B5A6-4D91-A90D-29E16F91B1B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77FD8B4E-76E3-4E4A-86CE-545214146E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FD8B4E-76E3-4E4A-86CE-545214146E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FD8B4E-76E3-4E4A-86CE-545214146E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FD8B4E-76E3-4E4A-86CE-545214146E51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{073EF248-E09E-487E-A959-5760225B2F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{073EF248-E09E-487E-A959-5760225B2F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{073EF248-E09E-487E-A959-5760225B2F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{073EF248-E09E-487E-A959-5760225B2F56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A6FC0F6-7A42-4F6E-85E8-C0D1E133D457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A6FC0F6-7A42-4F6E-85E8-C0D1E133D457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A6FC0F6-7A42-4F6E-85E8-C0D1E133D457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A6FC0F6-7A42-4F6E-85E8-C0D1E133D457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F2A456B-5032-41E7-9F25-A3A67AB456AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F2A456B-5032-41E7-9F25-A3A67AB456AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F2A456B-5032-41E7-9F25-A3A67AB456AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F2A456B-5032-41E7-9F25-A3A67AB456AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41BBDD37-5299-465B-BC22-3373CAD34FDA}
+	EndGlobalSection
+EndGlobal

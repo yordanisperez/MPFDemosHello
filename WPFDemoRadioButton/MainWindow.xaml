@@ -1,0 +1,56 @@
+﻿<Window x:Class="WPFDemoRadioButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDemoRadioButton"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="300">
+    <StackPanel>
+        <Label FontWeight="Bold"> Who do you vote for</Label>
+        <RadioButton x:Name="rbObama" Checked="rbObama_Checked" Unchecked="rbObama_Unchecked" GroupName="Presidents" VerticalContentAlignment="Center" Margin="0,3" >
+            <Label  Margin="0" Padding="0" >
+                <WrapPanel  Orientation="Horizontal">
+                    <Image Width="20" Source="/obama.jpg">
+                    </Image>
+                    <AccessText Margin="5,0,0,0" FontSize="18"  Text="Obama"></AccessText>
+                </WrapPanel>
+            </Label>
+        </RadioButton>
+        <RadioButton x:Name="rbTrump" Checked="rbTrump_Checked" Unchecked="rbTrump_Unchecked" GroupName="Presidents" VerticalContentAlignment="Center" Margin="0,3">
+            <Label  Margin="0" Padding="0" >
+                <WrapPanel  Orientation="Horizontal">
+                    <Image Width="20" Source="/trump.jpg">
+                    </Image>
+                    <AccessText Margin="5,0,0,0" FontSize="18" Text="Trump"></AccessText>
+                </WrapPanel>
+            </Label>
+        </RadioButton>
+        <RadioButton x:Name="rbMccain" Checked="rbMccain_Checked" Unchecked="rbMccain_Unchecked" GroupName="Presidents" VerticalContentAlignment="Center" Margin="0,3">
+            <Label  Margin="0" Padding="0" >
+                <WrapPanel  Orientation="Horizontal">
+                    <Image Width="20" Source="/mccain.jpg">
+                    </Image>
+                    <AccessText Margin="5,0,0,0" FontSize="18" Text="McCain"></AccessText>
+                </WrapPanel>
+            </Label>
+
+        </RadioButton>
+        <RadioButton x:Name="rbBiden" Checked="rbBiden_Checked"  Unchecked="rbBiden_Unchecked" GroupName="Presidents" VerticalContentAlignment="Center" Margin="0,3">
+            <Label  Margin="0" Padding="0" >
+                <WrapPanel  Orientation="Horizontal">
+                    <Image Width="20" Source="/biden.jpg">
+                    </Image>
+                    <AccessText Margin="5,0,0,0" FontSize="18" Text="Biden"></AccessText>
+                </WrapPanel>
+            </Label>
+        </RadioButton>
+
+
+        <Label FontWeight="Bold">Who you feel about it?</Label>
+        <RadioButton  GroupName="Feeling">Good</RadioButton>
+        <RadioButton  GroupName="Feeling">Ok</RadioButton>
+        <RadioButton  GroupName="Feeling">Not Happy</RadioButton>
+
+    </StackPanel>
+</Window>

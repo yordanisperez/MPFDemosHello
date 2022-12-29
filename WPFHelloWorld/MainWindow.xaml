@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPFHelloWorld.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFHelloWorld"
+        mc:Ignorable="d"
+        Title="Hello World Windows!!!" Height="300" Width="300">
+    <StackPanel>
+        <Label>Hello World!!!</Label>
+        <Button x:Name="btHello" Content="Click"></Button>
+        <TextBlock x:Name="tbHello">Hello <Bold>World</Bold>  Go to  <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" 
+                                                               NavigateUri="https://www.google.com">google</Hyperlink></TextBlock>
+
+    </StackPanel>
+</Window>

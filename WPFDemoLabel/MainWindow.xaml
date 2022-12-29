@@ -1,0 +1,20 @@
+﻿<Window x:Class="WPFDemoLabel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        xmlns:local="clr-namespace:WPFDemoLabel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="300">
+    <StackPanel>
+        <Label Margin="16,16,16,7" BorderBrush="Black" BorderThickness="1">
+            <StackPanel Orientation="Horizontal">
+                <Image Width="32" Source="/correo.png">
+                </Image>
+                <AccessText Margin="5,4,0,0" FontSize="14" FontWeight="Bold" Text="Mensage"></AccessText>
+            </StackPanel>
+        </Label>
+        <TextBox Height="32" Margin="16,0,16,0" FontSize="18"></TextBox>
+    </StackPanel>
+</Window>
