@@ -30,4 +30,23 @@ para establecer el grosor del borde alrededor del componente Label.
    Texto a mostrar
 </Label>
 ```
+## WPFDemoLink
+La etiqueta TextBlock tiene varios elementos secundarios que se pueden utilizar 
+para dar formato al texto. En este caso, se utiliza la etiqueta `Bold` para hacer que el 
+texto "World" aparezca en negrita y se utiliza la etiqueta `Hyperlink` para crear 
+un enlace hipervínculo en el texto "google".
 
+El atributo `NavigateUri` de la etiqueta `Hyperlink` se utiliza para establecer 
+la dirección URL a la que se dirigirá el enlace hipervínculo cuando 
+se haga clic en él. En este caso, se establece en "https://www.google.com", 
+lo que significa que cuando se haga clic en el enlace hipervínculo, 
+se abrirá una nueva pestaña del navegador en la dirección URL especificada.
+
+```
+<TextBlock x:Name="tbHello">
+   Hello <Bold>World</Bold>  Go to 
+   <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://www.google.com">
+      google
+   </Hyperlink>
+</TextBlock>
+```
