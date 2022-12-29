@@ -1,4 +1,4 @@
-#Aprendiendo los fundamentos de WPF con C#
+# Aprendiendo los fundamentos de WPF con C#
 
 WPF (Windows Presentation Foundation) es un marco de desarrollo de aplicaciones de escritorio de 
 Microsoft que permite crear interfaces de usuario atractivas y modernas para Windows. 
@@ -13,7 +13,7 @@ Label, Button, TextBox y Checkbox, entre otros.
 El proyecto es una buena forma de aprender sobre el uso de estos componentes y 
 cómo integrarlos en una aplicación de escritorio.
 
-##WPFDemoLabel
+## WPFDemoLabel
 El componente `Label` se puede utilizar para mostrar texto o imágenes 
 en la interfaz de usuario de una aplicación.
 
@@ -29,5 +29,5 @@ para establecer el grosor del borde alrededor del componente Label.
 <Label Margin="16,16,16,7" BorderBrush="Black" BorderThickness="1">
    Texto a mostrar
 </Label>
-```c#
+```
 
