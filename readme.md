@@ -178,3 +178,45 @@ del componente `TextBox` en inglés.
             />
 ```
 
+## WPFDemoSlider
+
+El elemento Slider tiene varios atributos que se pueden establecer para personalizar 
+su apariencia y comportamiento. En este caso, se establece el atributo `x:Name` en "slMyslider" 
+para darle un nombre al componente `Slider` y poder hacer referencia a él desde el código.
+El atributo `Minimum` se establece en "10" para establecer el valor mínimo del componente `Slider`. 
+El atributo `Maximum` se establece en "50" para establecer el valor máximo del componente `Slider`. 
+El atributo `IsSnapToTickEnabled` se establece en "true" para hacer que el componente `Slider` 
+se ajuste automáticamente al valor más cercano de la escala de valores 
+cuando se suelta el botón del ratón.
+
+El atributo `TickPlacement` se establece en "BottomRight" para mostrar las marcas de escala del 
+componente.
+
+El `binding` es una característica de `WPF` que permite enlazar una propiedad de un elemento de 
+interfaz de usuario con una fuente de datos. 
+Esto permite que el valor de la propiedad se actualice automáticamente cuando cambia el 
+valor de la fuente de datos y viceversa.
+
+Se establece un binding entre el elemento `TextBlock` y el elemento `Slider`. 
+El elemento `TextBlock` tiene el atributo `FontSize` establecido en una expresión de binding 
+que hace referencia al elemento `Slider` con el nombre "slMyslider" y a su propiedad "Value".
+Esto significa que el tamaño de la fuente del elemento `TextBlock` se actualizará automáticamente 
+cuando cambie el valor del elemento `Slider`
+.
+La expresión de binding también incluye el atributo `UpdateSourceTrigger` establecido 
+en "PropertyChanged", lo que significa que la fuente de datos se actualizará cada vez que 
+cambie la propiedad del elemento `Slider`.
+
+```
+        <Slider x:Name="slMyslider" 
+                Minimum="10"
+                Maximum="50" 
+                IsSnapToTickEnabled="true"
+                TickPlacement="BottomRight" 
+                TickFrequency="2" 
+                Value="15"
+                ValueChanged="slMyslider_ValueChanged"
+                >
+        </Slider>
+        <TextBlock x:Name="tbValueSlider" FontSize="{Binding ElementName=slMyslider , Path=Value ,UpdateSourceTrigger=PropertyChanged}"></TextBlock>
+```
