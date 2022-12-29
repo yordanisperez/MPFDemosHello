@@ -220,3 +220,56 @@ cambie la propiedad del elemento `Slider`.
         </Slider>
         <TextBlock x:Name="tbValueSlider" FontSize="{Binding ElementName=slMyslider , Path=Value ,UpdateSourceTrigger=PropertyChanged}"></TextBlock>
 ```
+## WPFDemoRadioButton
+
+El elemento `RadioButton` tiene varios atributos que se pueden establecer para 
+personalizar su apariencia y comportamiento. 
+En este caso, se establece el atributo `x:Name` en "rbObama" para darle un nombre al 
+componente `RadioButton` y poder hacer referencia a él desde el código. Los atributos
+`Checked` y `Unchecked` se establecen en los nombres de los controladores de eventos
+"rbObama_Checked" y "rbObama_Unchecked" respectivamente, para especificar 
+los métodos que se deben ejecutar cuando el componente `RadioButton` se selecciona o deselecciona.
+
+El atributo `GroupName` se establece en "Presidents" para agrupar el componente RadioButton 
+con otros componentes `RadioButton` que tengan el mismo valor de `GroupName`. 
+Esto significa que solo un componente `RadioButton` del grupo puede estar seleccionado a la vez. 
+El atributo `VerticalContentAlignment` se establece en "Center" 
+para centrar el contenido del componente `RadioButton` verticalmente. 
+El atributo `Margin` se establece en "0,3" para establecer el margen alrededor del 
+componente `RadioButton`.
+```
+<RadioButton x:Name="rbObama" Checked="rbObama_Checked" Unchecked="rbObama_Unchecked" GroupName="Presidents" VerticalContentAlignment="Center" Margin="0,3" >
+    <Label  Margin="0" Padding="0" >
+        <WrapPanel  Orientation="Horizontal">
+            <Image Width="20" Source="/obama.jpg">
+            </Image>
+            <AccessText Margin="5,0,0,0" FontSize="18"  Text="Obama"></AccessText>
+        </WrapPanel>
+    </Label>
+</RadioButton>
+```
+## WPFCheckboxDemo
+
+El elemento `CheckBox` tiene varios atributos que se pueden establecer para personalizar su 
+apariencia y comportamiento. En este caso, se establece el atributo `Margin` en "15,5" para 
+establecer el margen alrededor del componente `CheckBox`. 
+El atributo `x:Name` se establece en "cbCheese" para darle un nombre al componente `CheckBox`
+y poder hacer referencia a él desde el código. El atributo `VerticalContentAlignment` 
+se establece en "Center" para centrar el contenido del componente `CheckBox` verticalmente.
+
+Los atributos `Checked` y `Unchecked` se establecen en los nombres de los controladores 
+de eventos "changeChildrenPizza" para especificar el método que se debe ejecutar 
+cuando el componente `CheckBox` se selecciona o deselecciona.
+
+```
+<CheckBox Margin="15,5" x:Name="cbCheese" VerticalContentAlignment="Center" Checked="changeChildrenPizza" Unchecked="changeChildrenPizza">
+    <Label x:Name="lbCheese" Margin="0" Padding="0" >
+        <WrapPanel  Orientation="Horizontal">
+            <Image Width="20" Source="/extracheese.jpg">
+            </Image>
+            <AccessText Margin="5,0,0,0" FontSize="18" Text="Extra Cheese"></AccessText>
+        </WrapPanel>
+    </Label>
+</CheckBox>
+
+```
