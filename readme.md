@@ -145,22 +145,9 @@ establecido en "red" para cambiar el color de una parte del texto.
             Fames ac turpis egestas maecenas pharetra convallis posuere. 
             Massa placerat duis ultricies lacus.
         </TextBlock>
-
-## WPFDemoTextBox
 ```
-       <TextBox 
-            FontSize="30" 
-            Margin="15" 
-            AcceptsReturn="True" 
-            TextWrapping="Wrap"
-            SpellCheck.IsEnabled="True"
-            Language="en-US"
-            Background="AliceBlue"
-            Foreground="Black"
-            Text="Hello world"
-            IsReadOnly="True"
-            />
- ```
+## WPFDemoTextBox
+
 La etiqueta `TextBox` tiene varios atributos que se pueden establecer para personalizar 
 su apariencia y comportamiento. 
 En este caso, se establece el atributo `FontSize` en "30" para establecer el 
@@ -175,3 +162,19 @@ El atributo `SpellCheck.IsEnabled` se establece en "True" para habilitar la revi
 ortográfica del texto del componente `TextBox`. 
 El atributo `Language` se establece en "en-US" para establecer el idioma del texto 
 del componente `TextBox` en inglés.
+
+```
+       <TextBox 
+            FontSize="30" 
+            Margin="15" 
+            AcceptsReturn="True" 
+            TextWrapping="Wrap"
+            SpellCheck.IsEnabled="True"
+            Language="en-US"
+            Background="AliceBlue"
+            Foreground="Black"
+            Text="Hello world"
+            IsReadOnly="True"
+            />
+```
+
