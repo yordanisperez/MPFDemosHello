@@ -273,3 +273,48 @@ cuando el componente `CheckBox` se selecciona o deselecciona.
 </CheckBox>
 
 ```
+
+## WPFDemoMenu
+
+Se muestra un elemento `DockPanel` que se puede utilizar para organizar elementos de 
+interfaz de usuario en un panel de acuerdo con una de las cuatro direcciones 
+(arriba, abajo, izquierda o derecha).
+
+Dentro del elemento `DockPanel`, se encuentra un elemento `Menu` que se puede 
+utilizar para crear un menú de opciones en la interfaz de usuario. 
+El elemento `Menu` tiene el atributo `DockPanel.Dock` establecido en "Top" para indicar 
+que el elemento Menu debe anclarse a la parte superior del panel.
+
+Dentro del elemento `Menu`, hay un elemento `MenuItem` con el atributo `Header`
+establecido en "File". Este elemento `MenuItem` es un elemento principal del menú 
+y puede tener subelementos `MenuItem` que representan opciones disponibles en el menú. 
+En este caso, hay dos subelementos `MenuItem` con los encabezados "New" y "Open".
+
+El primer subelemento `MenuItem` con el encabezado "New" tiene dos subelementos `MenuItem` 
+con los encabezados "Project" y "Repository". 
+Estos elementos MenuItem tienen el atributo `Click` establecido en el nombre del 
+controlador de eventos "MenuItem_Click" para especificar el método que se debe 
+ejecutar cuando se hace clic en el elemento `MenuItem`.
+
+```
+<DockPanel>
+    <Menu DockPanel.Dock="Top">
+        <MenuItem Header="File">
+            <MenuItem Header="New">
+                <MenuItem Header="Project" Click="MenuItem_Click">
+                    <MenuItem.Icon>
+                        <Image Source="https://pic.onlinewebfonts.com/svg/img_99548.png"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Repository">
+                    <MenuItem.Icon>
+                        <Image Source="https://pic.onlinewebfonts.com/svg/img_474388.png"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Open"></MenuItem>
+
+        </MenuItem>
+    </Menu>
+</DockPanel>
+```

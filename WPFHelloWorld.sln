@@ -34,6 +34,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		readme.md = readme.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemoMenu", "WPFDemoMenu\WPFDemoMenu.csproj", "{37DF8D9D-7EF2-43F1-83D0-A8AD8366D963}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -92,6 +94,10 @@ Global
 		{9F8E1415-FD02-4175-9B58-A148E4EA529B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F8E1415-FD02-4175-9B58-A148E4EA529B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F8E1415-FD02-4175-9B58-A148E4EA529B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37DF8D9D-7EF2-43F1-83D0-A8AD8366D963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37DF8D9D-7EF2-43F1-83D0-A8AD8366D963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37DF8D9D-7EF2-43F1-83D0-A8AD8366D963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37DF8D9D-7EF2-43F1-83D0-A8AD8366D963}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
