@@ -318,3 +318,47 @@ ejecutar cuando se hace clic en el elemento `MenuItem`.
     </Menu>
 </DockPanel>
 ```
+## WPFDemoToolsBar
+
+Se muestra un elemento `ToolBarTray` que se puede utilizar para crear una barra de herramientas 
+en la interfaz de usuario. El elemento `ToolBarTray` tiene el atributo `DockPanel.Dock` 
+establecido en "Top" para indicar que el elemento `ToolBarTray` debe anclarse a la parte 
+superior del panel.
+
+Dentro del elemento `ToolBarTray`, se encuentra un elemento `ToolBar` que se puede utilizar 
+para crear una barra de herramientas que contiene elementos de interfaz de usuario como 
+botones, separadores y menús desplegables.
+
+En este caso, el elemento `ToolBar` contiene un elemento `Button` con el atributo `x:Name` 
+establecido en "btDelete" y el atributo `Click` establecido en el nombre del 
+controlador de eventos "btDelete_Click". El elemento `Button` también tiene un atributo `ToolTip` 
+establecido en "Delete text" para proporcionar una descripción de la función del botón 
+cuando el usuario coloca el cursor sobre él.
+
+El elemento `ToolBar` también contiene un elemento `Separator` que se puede utilizar 
+para separar los elementos de la barra de herramientas y un elemento `Label` que muestra el texto 
+"Font size:".
+
+Finalmente, el elemento `ToolBar` contiene un elemento `ComboBox` con el atributo `x:Name` 
+establecido en "cbSizeFont" y el atributo `SelectionChanged` establecido en el nombre 
+del controlador de eventos "cbSizeFont_SelectionChanged". El elemento `ComboBox` 
+tiene cuatro elementos `ComboBoxItem` que representan las opciones
+
+
+```
+<ToolBarTray  DockPanel.Dock="Top">
+    <ToolBar>
+        <Button x:Name="btDelete" Click="btDelete_Click" ToolTip="Delete text">
+            <Image Width="20" Source="https://pic.onlinewebfonts.com/svg/img_75708.png"></Image>
+        </Button>
+        <Separator></Separator>
+        <Label>Font size:</Label>
+        <ComboBox  x:Name="cbSizeFont" SelectionChanged="cbSizeFont_SelectionChanged">
+            <ComboBoxItem>8</ComboBoxItem>
+            <ComboBoxItem IsSelected="True">10</ComboBoxItem>
+            <ComboBoxItem>12</ComboBoxItem>
+            <ComboBoxItem>14</ComboBoxItem>
+        </ComboBox>
+    </ToolBar>
+</ToolBarTray>
+```
